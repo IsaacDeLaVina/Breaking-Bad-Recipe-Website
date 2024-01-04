@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: BreakingBad;
+    src: url(/fonts/HeartBreakingBad-zG0w.ttf);
+}
+body{
+    background: url(/images/Background.jpg), lightgray 50% / cover no-repeat;
+    color: white;
+    font-family: Inter;
+}
+
+main{
+    width: 1125px;
+    height: auto; 
+    margin-left: auto; margin-right: auto; padding-bottom: 1.5em;
+    background: rgba(56, 55, 55, 0.477);
+}
+
+/* Recipe Title */
+.recipeName{
+    font-size: 55px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Character Name */
+.characterName{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 16.5px;
+}
+
+/* Recipe Info */
+.info{
+    border: 5px solid white;
+    width: 444px;
+    height: 75px;
+    margin-left: 335px; margin-top: 15px;
+}
+.recipeInfo p{
+    display: inline-block; 
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 15px;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+/* Thumbnail */
+.thumbnail{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-left: 29em;
+    margin-top: 2em;
+
+    
+}
+
+/* Different thumbnails for each recipes */
+.thumbnail-Mike{
+    background: url(/images/Characters/Finger.jpg);
+    background-position: center -10px;
+    background-size: cover;
+}
+.thumbnail-Gus{
+    background: url(/images/Characters/Gus\ Fring.webp);
+    background-position: center;
+    background-size: cover;
+}
+.thumbnail-Lalo{
+    background: url(/images/Characters/Lalo\ Salamanca_1.jpg);
+    background-position: center -90px;
+    background-size: cover;
+}
+.thumbnail-Jesse{
+    background: url(/images/Characters/Jesse\ Pinkman.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Different food imgae for each recipes */
+.imgFood-1{
+    background: url(/images/Food/pimento\ cheese\ sandwich.webp);
+    background-position: center ;
+    background-size: cover;
+}
+.imgFood-2{
+    background: url(/images/Food/Fried\ Chicken.jpg);
+    background-position: center ;
+    background-size: cover;
+}
+.imgFood-4{
+    background: url(/images/Food/Huevos\ Rancheros.jpg);
+    background-position: center ;
+    background-size: cover;
+}
+.imgFood-5{
+    background: url(/images/Food/Carne-Asada-Tacos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: block;
+    width: fit-content;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 27px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0; width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px solid white;
+}
+/* Create the checkmark */
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/* Writing */
+#writing p{
+    display: flex;
+    flex-direction: column;
+    width: 885px;
+    height: 155px;
+    font-size: 30px;
+    justify-content: flex-end;
+    margin-top: 3em; margin-bottom: 1em; margin-left: 3.2em;
+}
+
+/* Fig caption */
+figcaption{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px; margin-bottom: 20px;
+}
+
+/* Image Placeholder*/
+figure{
+    margin-top: 1em; margin-bottom: 1em; margin-left: 6.1em;
+    height: 594px;
+    width: 896px;
+}
+
+/* Home Page Button */
+#title{
+    font-family: BreakingBad;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+#title, a{
+   text-decoration: none;
+   color: rgb(235, 233, 233);
+}
+a:active, a:visited, a:hover{
+    color: white;
+}
+
+
+/* Food Image */
+.imgFood{
+    background-color: rgb(127, 127, 127);
+}
+
+
+/* Title Boxes */
+
+.textBorder {
+    border: 5px solid;
+    width: 55em;
+    margin-left: 6.1em;
+    padding-top: 1em; padding-bottom: 1em;
+
+}
+
+.ingredientTitle, .caption, .instructionsTitle{
+    /* Changes the width and height of the border */
+    font-size: 3em;
+    text-align: center;
+}
+
+.checkBox_Section, .instructions_Section{
+   margin-left: 6em; margin-top: 1.5em; margin-bottom: 1.5em;
+}
+
+/* Instruction List */
+ol{
+    padding-left: 33px;
+    font-size: 20px;
+
+}
+
+ol li{
+    margin-bottom: 15px;
+    font-size: 27px;
+    width: 34em;
+}
+
+#writing {
+    padding-top: 1.5em;
+}

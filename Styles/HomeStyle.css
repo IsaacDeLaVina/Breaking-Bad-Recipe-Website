@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+@font-face{
+    font-family: BreakingBad;
+    src: url(/fonts/HeartBreakingBad-zG0w.ttf);
+}
+body{
+    background: url(/images/Cooking_Bad.jpg);
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+main{
+padding: 15.6em; /* Reddjust the browser image */
+padding-top: 23.5em;
+}
+
+#Chief_Waltuh{
+  display: none;
+}
+
+#title{
+  font-family: BreakingBad; font-weight: 400;
+  text-align: center;
+  width: 553px;
+  height: 287px;
+  font-size: 140px; 
+  font-style: normal;
+
+  margin-left: 60px;
+}
+
+.menuSelection{
+  width: 671px; 
+  height: 268px;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+ul, li{
+  padding-top: 20px;
+  text-align: center;
+}
+
+li:hover{
+  font-size: larger;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+/*TODO: ADD MORE RESPONSIVE FEATURES FOR MULTIPLE DEVICES */
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    background: url(/images/Background.jpg);
+  }
+
+ main{
+  padding: 5px;
+  margin-top: 5em;
+ }
+
+ ul li{
+  margin: auto;
+  padding-top: 51px;
+  height: 57px;
+}
+
+
+#Chief_Waltuh{
+  display: block;
+  margin: auto 5px;
+  width: 40em;
+  padding-top: 30em;
+}
+
+}
